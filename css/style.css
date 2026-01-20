@@ -285,7 +285,7 @@ body {
 
 .os-header {
   padding: 60px 0;
-    background: #f7f8fa;
+    
 }
 
 .os-header-grid {
@@ -293,6 +293,7 @@ body {
   grid-template-columns: 1.2fr 1fr;
   gap: 40px;
   align-items: center;
+
     
 }
 
