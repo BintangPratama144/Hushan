@@ -9,7 +9,18 @@
 body {
   color: #333;
   line-height: 1.6;
+    background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
 
 /*Container*/
 .container {
@@ -274,6 +285,7 @@ body {
 
 .os-header {
   padding: 60px 0;
+    background: #f7f8fa;
 }
 
 .os-header-grid {
@@ -281,6 +293,7 @@ body {
   grid-template-columns: 1.2fr 1fr;
   gap: 40px;
   align-items: center;
+    
 }
 
 .os-logo img {
@@ -385,7 +398,7 @@ body {
 }
 
 .footer-item:not(:last-child) {
-  border-right: 3px solid #333;
+  border-right: none;
 }
 
 .footer-copy {
@@ -479,6 +492,13 @@ body {
   .visi-misi-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/*Track Of Works*/
+
+.Backround-white {
+  background: #f7f8fa;
+  min-height: 100vh;
 }
 
 .product-list {
