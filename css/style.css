@@ -369,7 +369,6 @@ body {
 .why-card,
 .footer-item {
   border-right: none;
-  border-bottom: 2px solid #ddd;
 }
 
 /*Footer*/
@@ -382,24 +381,50 @@ body {
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+}
+
+.footer-grid {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.footer-grid::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: #ddd;
 }
 
 .footer-item {
   padding: 0 30px;
 }
 
+
 .footer-item a {
   display: block;
-  margin-bottom: 8px;
+  width: 100%;
 }
 
+.footer a {
+  color: #333;            
+  text-decoration: none;  
+}
+
+/* Hover effect */
+.footer a:hover {
+  color: #0a8f5a;     
+}
 .footer-item:not(:last-child) {
   border-right: none;
 }
 
 .footer-copy {
   margin-top: 40px;
-  background: #000;
+  background: #0a8f5a;
   color: #fff;
   text-align: center;
   padding: 12px 0;
@@ -409,6 +434,21 @@ body {
   height: 20px;
   object-fit: contain;
 }
+
+.footer h4 {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
+.footer p {
+  margin: 0 0 10px;
+  line-height: 1.6;
+}
+
+.footer a {
+  margin-bottom: 8px;
+}
+
 
 @media (max-width: 992px) {
   .grid-2,
