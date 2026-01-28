@@ -757,65 +757,27 @@ body {
     padding: 6px 10px;
   }
 }
-/* ===== SECTION BACKGROUND ===== */
-.section-bg {
-  position: relative;
-  padding: 120px 0;
-
-  background: url("../images/bgbg.jpeg") center / cover no-repeat;
-  overflow: hidden;
-
-  /* animasi lembut */
-  animation: bgFadeUp 1.2s ease-out both;
-}
-
-.section-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  z-index: 0;
-}
-
-/* konten di atas background */
-.section-bg > * {
-  position: relative;
-  z-index: 2;
-}
-
-
-
-
-
-@keyframes bgFadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes contentFadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* ===== HERO SECTION ===== */
 .hero {
   
   position: relative;
-  padding: 300px 0;
+  padding: 250px 0;
   overflow: hidden;
-  background: url("../images/bgbggg.jpeg") right center / cover no-repeat;
+  background: url("../images/bgbgbg.jpeg") right center / cover no-repeat;
+
+
+  position: relative;
+  height: 90vh; 
+  min-height: 300px; 
+  overflow: hidden;
+
+  background-image: url("../images/bgbgbg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* fokus ke bawah, atas boleh kepotong */
+  background-position: right bottom;
 }
 
 /* efek gradasi putih ke transparan */
@@ -847,7 +809,7 @@ body {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
 }
 
 .hero-left {
@@ -855,8 +817,9 @@ body {
 }
 
 .hero-logo {
-  width: 450px;
-  margin-top: 20px;
+  width: 500px;
+   transform: translateY(-50px);
+  ;
 }
 
 .hero-text {
@@ -913,24 +876,25 @@ body {
 ========================= */
 @media (max-width: 600px) {
   .hero {
-    min-height: 50vh;
-
-    /* INI KUNCI UTAMA */
+    height: 65vh;
+    min-height: 0;
     background-size: 120%;
     background-position: center top;
   }
 
- 
+  .hero .container {
+    padding-top: 50px;
+  }
 
   .hero-grid {
     grid-template-columns: 1fr;
-    text-align: left;
-    gap: 25px;
+    gap: 20px;
   }
 
   .hero-logo {
     width: 200px;
-    margin: 0 auto 18px;
+    margin: 0 auto 6px;
+    transform: translateY(-10px);
   }
 
   .hero-text {
