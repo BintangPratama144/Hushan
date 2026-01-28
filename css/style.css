@@ -811,10 +811,11 @@ body {
 
 /* ===== HERO SECTION ===== */
 .hero {
+  
   position: relative;
-  padding: 120px 0;
+  padding: 300px 0;
   overflow: hidden;
-  background: url("../images/bgbgg.jpeg") right center / cover no-repeat;
+  background: url("../images/bgbggg.jpeg") right center / cover no-repeat;
 }
 
 /* efek gradasi putih ke transparan */
@@ -855,7 +856,7 @@ body {
 
 .hero-logo {
   width: 450px;
-  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .hero-text {
@@ -912,8 +913,7 @@ body {
 ========================= */
 @media (max-width: 600px) {
   .hero {
-    padding: 60px 0;
-    min-height: 65vh;
+    min-height: 50vh;
 
     /* INI KUNCI UTAMA */
     background-size: 120%;
@@ -941,4 +941,3 @@ body {
     font-size: 13px;
   }
 }
-
