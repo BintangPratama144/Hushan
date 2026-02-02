@@ -616,7 +616,7 @@ body {
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
-  display: flex; /* ⬅️ untuk center ke bawah */
+  display: flex; 
   flex-direction: column;
   justify-content: center;
 }
@@ -653,8 +653,9 @@ body {
   background: #25d366;
 }
 .social-icons a:nth-child(2):hover {
-  background: #905dff;
+  background: #90d5ff;
 }
+
 @media (max-width: 992px) {
   .contact-grid-single {
     grid-template-columns: 1fr;
@@ -773,7 +774,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 
-  /* fokus ke bawah, atas boleh kepotong */
   background-position: right bottom;
 }
 
@@ -832,9 +832,7 @@ body {
   color: #444;
 }
 
-/* =========================
-   TABLET & MOBILE (<=1024)
-========================= */
+
 @media (max-width: 1024px) {
   .hero {
     padding: 100px 0;
@@ -868,9 +866,7 @@ body {
   }
 }
 
-/* =========================
-   MOBILE – FOTO DIKECILKAN
-========================= */
+
 @media (max-width: 600px) {
   .hero {
     height: 65vh;
@@ -902,4 +898,3 @@ body {
     font-size: 13px;
   }
 }
-
