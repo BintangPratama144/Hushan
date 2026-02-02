@@ -653,10 +653,7 @@ body {
   background: #25d366;
 }
 .social-icons a:nth-child(2):hover {
-  background: #1877f2;
-}
-.social-icons a:nth-child(3):hover {
-  background: #ffffff;
+  background: #905dff;
 }
 @media (max-width: 992px) {
   .contact-grid-single {
@@ -905,3 +902,4 @@ body {
     font-size: 13px;
   }
 }
+
