@@ -817,12 +817,12 @@ body {
 }
 @media (max-width: 1024px) {
   .hero {
-    height: 50vh;
-    min-height: 460px;
+    height: 27vh;
+    min-height: 200px;
   }
 
   .hero-bg {
-    object-position: center 22%;
+    object-position: center 12%;
   }
 
   .hero .container {
@@ -834,15 +834,14 @@ body {
   }
 
   .hero-logo {
-    width: 400px;
+    width: 300px;
   
   }
 }
 @media (max-width: 600px) {
   .hero {
-  height: 37vh;
-  min-height: 10px;
-
+  height: 18vh;
+  min-height: 2px;
 
   }
 
