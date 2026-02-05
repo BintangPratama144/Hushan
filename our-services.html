@@ -15,15 +15,22 @@
       <div class="topbar-left">
         HUSHAN CREATIVE
       </div>
-
-      <nav class="topbar-nav">
-        <a href="index.html">Home</a>
-        <a href="our-services.html" class="active">Our Services</a>
-        <a href="The Tracks Of Works.html">The Tracks Of Works</a>
-        <a href="conttact-us.html">Contact Us</a>
-      </nav>
+      
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+
+    <nav class="topbar-nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="our-services.html" class="active">Our Services</a>
+      <a href="The Tracks Of Works.html">The Tracks Of Works</a>
+      <a href="conttact-us.html" >Contact Us</a>
+    </nav>
   </div>
+</div>
+
 
   
   <section class="os-header">
@@ -212,5 +219,15 @@
     </div>
   </footer>
 
+  <script>
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("navMenu");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+</script>
+  
 </body>
 </html>
+
