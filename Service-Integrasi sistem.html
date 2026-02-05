@@ -14,14 +14,20 @@
           <strong>HUSHAN CREATIVE</strong>
         </div>
 
-        <nav class="topbar-nav">
-          <a href="index.html">Home</a>
-          <a href="our-services.html" class="active">Our Services</a>
-          <a href="The Tracks Of Works.html">The Tracks Of Records</a>
-          <a href="conttact-us.html">Contact</a>
-        </nav>
-      </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+
+    <nav class="topbar-nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="our-services.html" class="active">Our Services</a>
+      <a href="The Tracks Of Works.html">The Tracks Of Works</a>
+      <a href="conttact-us.html">Contact Us</a>
+    </nav>
+  </div>
+</div>
 
     <section class="logo-section home-logo">
       <img src="images/logo.png" alt="Hushan Logo" />
@@ -176,8 +182,17 @@ Kami menyediakan layanan IT Maintenance terpadu untuk memastikan sistem teknolog
         © 2026 Hushan Creative
       </div>
     </footer>
+        <script>
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("navMenu");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+</script>
   </body>
 </html>
+
 
 
 
