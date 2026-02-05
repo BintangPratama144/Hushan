@@ -13,14 +13,20 @@
     <div class="topbar">
       <div class="container">
         <div class="topbar-left">HUSHAN CREATIVE</div>
-        <nav class="topbar-nav">
-          <a href="index.html">Home</a>
-          <a href="our-services.html">Our Services</a>
-          <a href="The Tracks Of Works.html">The Tracks Of Works</a>
-          <a href="conttact-us.html" class="active">Contact Us</a>
-        </nav>
-      </div>
+        <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+
+    <nav class="topbar-nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="our-services.html">Our Services</a>
+      <a href="The Tracks Of Works.html">The Tracks Of Works</a>
+      <a href="conttact-us.html" class="active">Contact Us</a>
+    </nav>
+  </div>
+</div>
 
     <section class="contact-section">
   <div class="container">
@@ -112,8 +118,18 @@
     </div>
   </footer>
 
+  <script>
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("navMenu");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+</script>
+
 </body>
 </html>
+
 
 
 
