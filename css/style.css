@@ -727,16 +727,61 @@ body {
 .why-card:last-child {
   border-bottom: auto;
 }
+
+
 @media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    width: 24px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+  }
+
+  /* DROPDOWN MENU (HAMBURGER ONLY) */
   .topbar-nav {
-    overflow-x: auto;
-    white-space: nowrap;
+    position: absolute;
+    top: 60px;              /* jangan 5%, biar stabil */
+    right: 16px;
+    width: 200px;
+    background: #0a8f5a;
+    flex-direction: column;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    z-index: 999;
+
+    /* hidden state */
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+    pointer-events: none;
+    transition: all 0.25s ease;
   }
-  .topbar-nav::-webkit-scrollbar {
-    display: none;
+
+  .topbar-nav a {
+    padding: 12px 16px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    font-size: 14px;
   }
-  .home-logo img {
-    max-width: 280px;
+
+  .topbar-nav a:last-child {
+    border-bottom: none;
+  }
+
+  /* AKTIF SAAT HAMBURGER DIKLIK */
+  .topbar-nav.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+
   }
 }
 @media (max-width: 480px) {
@@ -756,8 +801,7 @@ body {
   }
 }
 
-/* ===== HERO SECTION ===== */
-/* ===== HERO SECTION ===== */
+
 .hero {
   position: relative;
   height: 100vh;
@@ -939,3 +983,4 @@ body {
     transform: translateX(-50%);
   }
 }
+
