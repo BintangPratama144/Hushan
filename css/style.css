@@ -814,8 +814,8 @@ body {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;              /* FULL LAYAR */
-  object-position: center 15%;    /* FOKUS FOTO */
+  object-fit: cover;
+  object-position: center 15%;
   z-index: 0;
 }
 
@@ -881,24 +881,8 @@ body {
     width: 300px;
   
   }
-}
-@media (max-width: 600px) {
-  .hero {
-  height: 18vh;
-  min-height: 2px;
-
-  }
-
-
-
-  .hero .container {
-    padding-top: 40px;
-    align-items: flex-start;
-  }
-
-  .hero-logo {
-    width: 200px;
-  }
+    
+  
 }
 @media (max-width: 992px) {
   .footer-grid::after {
@@ -964,6 +948,7 @@ body {
 @media (min-width: 768px) {
   .logo-track img {
     height: 70px;
+
   }
 }
 
@@ -984,3 +969,126 @@ body {
   }
 }
 
+.mobile-text{
+  display: none;
+}
+
+.desktop-text{
+  display: inline;
+}
+/* HERO TEXT */
+.hero-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #0a8f5a;
+}
+
+.hero-desc {
+  max-width: 420px;
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+
+
+   .hero-bg {
+    object-position: center 14%;
+  }
+
+  .hero-grid{
+    text-align: left;
+  }
+
+  .hero-left{
+    align-items: flex-start;
+  }
+
+  .hero-logo{
+    width: 200px;
+    margin-left: 0;
+    margin-right: auto;
+    display: block;
+  }
+
+  .hero-title{
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .hero-desc{
+    font-size: 12px;
+    max-width: 50%;
+    text-align: left;
+  }
+
+}
+
+
+
+
+
+@media (max-width: 600px){
+
+  .hero{
+    padding: -40Px 0;
+   
+  }
+
+   .desktop-text{
+    display:none;
+  }
+
+  .mobile-text{
+    display:block;
+  }
+
+   .hero-bg {
+    object-position: center 17%;
+  }
+
+
+
+  .hero .container{
+    align-items: flex-start;
+    margin-top: 20px; 
+    margin-bottom: 200px; 
+  }
+
+  .hero-grid{
+    text-align: left;
+  }
+
+  /* LOGO */
+  .hero-logo{
+    width: 90px;
+    margin-left: 0;
+    margin-right: auto;
+    display: block;
+  }
+
+  /* JUDUL */
+  .hero-title{
+    font-size: 8px;
+    margin-top: 6px;
+    line-height: 1.3;
+  }
+
+  /* DESKRIPSI */
+  .hero-desc{
+    font-size: 8px;
+    line-height: 1.5;
+    max-width: 60%;
+  }
+
+  .desktop-text{
+    display:none;
+  }
+
+  .mobile-text{
+    display:block;
+  }
+
+}
